@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title></title>
+  <title>lds~space</title>
   
-  <subtitle>123</subtitle>
+  <subtitle>只争朝夕 不负韶华</subtitle>
   <link href="http://lds1997.github.io/atom.xml" rel="self"/>
   
   <link href="http://lds1997.github.io/"/>
   <updated>2022-04-01T06:30:53.457Z</updated>
   <id>http://lds1997.github.io/</id>
+  
+  <author>
+    <name>lds</name>
+    
+  </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
   
