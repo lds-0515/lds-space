@@ -6,7 +6,7 @@
   <link href="http://lds1997.github.io/atom.xml" rel="self"/>
   
   <link href="http://lds1997.github.io/"/>
-  <updated>2022-04-02T09:21:29.015Z</updated>
+  <updated>2022-04-02T09:29:25.840Z</updated>
   <id>http://lds1997.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://lds1997.github.io/2022/04/01/docker-ru-men/"/>
     <id>http://lds1997.github.io/2022/04/01/docker-ru-men/</id>
     <published>2022-04-01T15:18:25.000Z</published>
-    <updated>2022-04-02T09:21:29.015Z</updated>
+    <updated>2022-04-02T09:29:25.840Z</updated>
     
     
       
@@ -34,12 +34,14 @@
     
     
     
+    <category term="Docker" scheme="http://lds1997.github.io/categories/Docker/"/>
     
-    <category term="docker" scheme="http://lds1997.github.io/tags/docker/"/>
     
-    <category term="centos" scheme="http://lds1997.github.io/tags/centos/"/>
+    <category term="Docker" scheme="http://lds1997.github.io/tags/Docker/"/>
     
-    <category term="idea" scheme="http://lds1997.github.io/tags/idea/"/>
+    <category term="Centos" scheme="http://lds1997.github.io/tags/Centos/"/>
+    
+    <category term="Idea" scheme="http://lds1997.github.io/tags/Idea/"/>
     
   </entry>
   
