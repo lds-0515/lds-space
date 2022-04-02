@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, Java、Spring、SpringMVC、Mybatis、SpringBoot、SpringCloud、Mysql、Redis">
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex">
+    <meta name="keywords" content="git入门, Java、Spring、SpringMVC、Mybatis、SpringBoot、SpringCloud、Mysql、Redis">
+    <meta name="description" content="git的常用命令和搭建远程仓库">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -19,7 +19,7 @@
 
     
 
-    <title>Hello World | lds~space</title>
+    <title>git入门 | lds~space</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -249,12 +249,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">git入门</h1>
                 </div>
             </div>
         </div>
@@ -368,12 +368,37 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/git/">
+                                <span class="chip bg-color">git</span>
+                            </a>
+                        
+                            <a href="/tags/GitLab/">
+                                <span class="chip bg-color">GitLab</span>
+                            </a>
+                        
+                            <a href="/tags/Gitee/">
+                                <span class="chip bg-color">Gitee</span>
+                            </a>
+                        
+                            <a href="/tags/GitHub/">
+                                <span class="chip bg-color">GitHub</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Git/" class="post-category">
+                                Git
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -389,14 +414,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-04-01
+                    2022-04-02
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    73
+                    1k
                 </div>
                 
 
@@ -416,19 +441,140 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new "My New Post"<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+                <h1 id="git入门"><a href="#git入门" class="headerlink" title="git入门"></a>git入门</h1><h2 id="git配置命令"><a href="#git配置命令" class="headerlink" title="git配置命令"></a>git配置命令</h2><pre class="line-numbers language-none"><code class="language-none">1、配置全局的用户名和邮箱 
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+ 	git config --global user.name "15939011994"
+	git config --global user.email "951576458@qq.com"
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+2、针对单个仓库配置用户名和邮箱 
+	git config user.name "fmy" 
+	git config user.email "201723115@stu.ncwu.edu.cn" 
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+3、查看git所有配置信息 
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+	git config --list 
+	
+4、查看配置的用户名或密码
+
+	git config user.name
+	git config user.email<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="将本地新建的项目提交到远程仓库"><a href="#将本地新建的项目提交到远程仓库" class="headerlink" title="将本地新建的项目提交到远程仓库"></a>将本地新建的项目提交到远程仓库</h2><p><img src="/2022/04/01/git-ru-men/1414675-20181021141754594-1897748047.png" alt="1414675-20181021141754594-1897748047"></p>
+<pre class="line-numbers language-none"><code class="language-none">1、初始化本地仓库
+
+	git init
+	
+2、将本地内容添加至git本地暂存区中/将暂存区的文件删除
+
+    git add 文件名
+    git rm --cached 文件名
+    
+ 3、将暂存区添加至本地仓库中
+ 
+ 	git commit -m "日志信息" 文件名
+ 	
+ 4、添加远程仓库路径
+ 
+ 	git remote add origin https://github.com/gybguohao/test.git
+ 	
+ 5、将本地内容push至远程仓库中
+ 
+ 	git push -u origin master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><pre class="line-numbers language-none"><code class="language-none">1、查看本地库中代码状态
+
+	git status
+	
+2、查看版本信息/查看版本详细信息
+
+	git reflog
+	git log
+	
+3、回退版本
+
+	git reset 回退版本号
+	<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="Git-分支管理"><a href="#Git-分支管理" class="headerlink" title="Git 分支管理"></a>Git 分支管理</h2><pre class="line-numbers language-none"><code class="language-none">1、查看分支
+
+	git branch/git branch -v
+	
+2、添加分支
+
+	git branch test
+    
+3、切换分支
+
+ 	git checkout test 
+ 	
+ 4、删除分支
+ 
+	git branch -d test
+	
+ 5、合并分支
+ 
+ 	 git merge dev (如果当前是master分支，需要合并dev分支)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="git远程库操作"><a href="#git远程库操作" class="headerlink" title="git远程库操作"></a>git远程库操作</h2><p><img src="/2022/04/01/git-ru-men/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20220326164509.png" alt="微信截图_20220326164509"></p>
+<pre class="line-numbers language-none"><code class="language-none">工作区：用来编辑保存项目文件的地方，也是用户能直接操作到的地方。
+暂存区：保存了下次将提交的文件列表信息，一般在 Git 仓库目录中，是一个叫index的文件，通常多数说法还是叫暂存区域；
+版本库：也叫本地版本库，之所以说git 快，是因为它是分布式版本控制系统，大部分提交都是对本地仓库而言的，不依赖网络，最后一次会推送的到远程仓库。
+
+1、管理远程仓库(remote)
+
+        查看关联的远程仓库的名称：git remote
+        查看关联的远程仓库的详细信息：git remote -v
+        添加远程仓库的关联：git remote add origin &lt;远程仓库地址&gt;
+        删除远程仓库的关联：git remote remove &lt;远程仓库名称&gt;
+        修改远程仓库的关联：git remote set-url origin &lt;新的远程仓库地址&gt;
+        更新远程仓库的分支：git remote update origin --prune
+        
+2、将本地仓库的更新推送到远程仓库上(push)
+
+		推送到远程仓库上: git push origin master/git push origin
+		删除远程dev分支: git push origin --delete dev
+		
+3、获取远程仓库的更新(pull)	
+
+		取回远程仓库上的dev分支与本地的master分支合并：git pull origin dev:master
+		取回远程仓库上的dev分支与当前分支合并：git pull origin dev
+4、克隆(clone)
+
+		git clone 链接url
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="centos7搭建GitLab"><a href="#centos7搭建GitLab" class="headerlink" title="centos7搭建GitLab"></a>centos7搭建GitLab</h2><pre class="line-numbers language-none"><code class="language-none">官网地址：https://about.gitlab.cn/install/
+1、在 CentOS 7上，下面的命令也会在系统防火墙中打开 HTTP、HTTPS 和 SSH 访问（可选）
+    sudo yum install -y curl policycoreutils-python openssh-server perl
+    sudo systemctl enable sshd
+    sudo systemctl start sshd
+    sudo firewall-cmd --permanent --add-service=http
+    sudo firewall-cmd --permanent --add-service=https
+    sudo systemctl reload firewalld
+    sudo firewall-cmd --permanent --add-service=http
+    sudo firewall-cmd --permanent --add-service=https
+    sudo systemctl reload firewalld
+2、 安装 Postfix 以发送电子邮件通知（可选）
+    sudo yum install postfix
+    sudo systemctl enable postfix
+    sudo systemctl start postfix
+3、下载GitLab 安装包
+	wget https://omnibus.gitlab.cn/el/7/gitlab-jh-14.9.0-jh.0.el7.x86_64.rpm
+4、安装安装包
+	sudo rpm -Uvh gitlab-jh-14.9.0-jh.0.el7.x86_64.rpm
+5、初始化Gitlab服务
+  	gitlab-ctl reconfigure（直到最后一行出现 gitlab Reconfigured）
+6、启动gitlab服务
+	gitlab-ctl start
+7、访问gitlab/查看超级管理员的初始化密码
+	直接通过ip地址就可以访问，默认走的是80端口
+	cat /etc/gitlab/initial_root_password
+	注意：
+	 	1、如果注册新用户，需要超级管理员在后台审核
+	 	2、克隆项目时如果没有权限，需要在该项目中邀请成员，加入该项目组后，才可以对项目进行操作。
+8、关闭gitlab服务
+	gitlab-ctl stop<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
 
                 
             </div>
@@ -442,7 +588,23 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/git/">
+                                    <span class="chip bg-color">git</span>
+                                </a>
+                            
+                                <a href="/tags/GitLab/">
+                                    <span class="chip bg-color">GitLab</span>
+                                </a>
+                            
+                                <a href="/tags/Gitee/">
+                                    <span class="chip bg-color">Gitee</span>
+                                </a>
+                            
+                                <a href="/tags/GitHub/">
+                                    <span class="chip bg-color">GitHub</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -887,7 +1049,60 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/04/01/git-chang-yong-ming-ling/">
+                <a href="/2022/04/01/docker-ru-men/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="docker入门">
+                        
+                        <span class="card-title">docker入门</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            docker的常用命令和安装与部署
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-04-01
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            李东升
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/docker/">
+                        <span class="chip bg-color">docker</span>
+                    </a>
+                    
+                    <a href="/tags/centos/">
+                        <span class="chip bg-color">centos</span>
+                    </a>
+                    
+                    <a href="/tags/idea/">
+                        <span class="chip bg-color">idea</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                本篇&nbsp;<i class="far fa-dot-circle"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/04/01/git-ru-men/">
                     <div class="card-image">
                         
                         
@@ -903,9 +1118,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-04-01
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-01
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -918,6 +1133,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -933,43 +1149,10 @@
                         <span class="chip bg-color">Gitee</span>
                     </a>
                     
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2022/04/01/3/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
-                        
-                        <span class="card-title">Hello World</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-01
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            李东升
-                            
-                        </span>
-                    </div>
+                    <a href="/tags/GitHub/">
+                        <span class="chip bg-color">GitHub</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -1158,7 +1341,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">3.8k</span>
+                        class="white-color">3.6k</span>
             
             
             
